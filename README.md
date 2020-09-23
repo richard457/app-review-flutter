@@ -8,9 +8,7 @@ A Demo app for spenn interview
 
 - View: Shows the UI to the user. Single widgets also qualify as views (for consistency in terminology) a view, in this case, is not a "Page" it's just a UI representation.
 
-- ViewModel: Manages the state of the View, business logic, and any other logic as required from user interaction. It does this by making use of the services
-
-- Services: A wrapper of a single functionality/feature set. This is commonly used to wrap things like showing a dialog, wrapping database functionality, integrating an API, etc.
+- ViewModel or controller: Manages the state of the View, business logic, and any other logic as required from user interaction. It does this by making use of the services
 
 
 # How to run the project locally

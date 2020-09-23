@@ -55,6 +55,7 @@ class Product extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           Header(canBack: true),
+                          
                           Container(
                             height: Get.width - 50,
                             alignment: Alignment.center,

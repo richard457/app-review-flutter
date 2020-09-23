@@ -35,7 +35,7 @@ class Cart extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  Formatter.brl(this.amount * this.quantity).symbolOnLeft,
+                  Formatter.brl(this.amount * this.quantity).symbolOnLeft +'/ 1 point', //point is hardcoded for demo purpose.
                   style: TextStyle(
                     fontSize: 18,
                     color: AppColors.darkGray,
@@ -48,7 +48,11 @@ class Cart extends StatelessWidget {
               width: 50,
               height: 42,
               child: RawMaterialButton(
-                onPressed: () => Get.back(),
+                // TODO(richard): add the popup.
+                onPressed: (){
+                  final snackBar = SnackBar(content: Text('You earned 1 points'));
+                  Scaffold.of(context).showSnackBar(snackBar);
+                },
                 fillColor: AppColors.black,
                 elevation: 0,
                 disabledElevation: 0,
@@ -64,7 +68,7 @@ class Cart extends StatelessWidget {
                       Align(
                         alignment: Alignment.center,
                         child: Icon(
-                          Feather.shopping_cart,
+                          Feather.play,
                           size: 16,
                           color: AppColors.white,
                         ),
